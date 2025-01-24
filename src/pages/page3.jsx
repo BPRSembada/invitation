@@ -29,7 +29,7 @@ const Page_three = () => {
         Swal.fire({
           icon: "error",
           title: "Submission Failed",
-          text: "Tolong lengkapi semua data.",
+          text: "Please complete all the required information.",
         });
       } else if (name && !numberOfGuests && !nameOfGuests) {
         const res = await fetch(
@@ -79,7 +79,7 @@ const Page_three = () => {
           Swal.fire({
             icon: "success",
             title: "Data Submitted!",
-            text: "Your reservation data has been successfully submitted.",
+            text: "Your reservation details have been successfully submitted.",
           });
           setName("");
           setAttendanceConfirmation("");
@@ -96,7 +96,7 @@ const Page_three = () => {
         Swal.fire({
           icon: "error",
           title: "Submission Failed",
-          text: "Lengkapi data Attendance.",
+          text: "Please provide the guest information.",
         });
       } else if (
         !name &&
@@ -107,13 +107,13 @@ const Page_three = () => {
         Swal.fire({
           icon: "error",
           title: "Submission Failed",
-          text: "Tolong isi Nama Lengkap Anda.",
+          text: "Kindly enter your full name.",
         });
       } else {
         Swal.fire({
           icon: "error",
           title: "Submission Failed",
-          text: "Tolong isi data reservasi dengan benar.",
+          text: "Please complete all the required information.",
         });
       }
     } catch (error) {
