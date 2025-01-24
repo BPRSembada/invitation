@@ -90,7 +90,7 @@ const Cover = () => {
             data-aos-delay="2000"
           >
             <h3>Kepada Yth :</h3>
-            <h2>Bpk/Ibu {name ? name : "Tamu Undangan"}</h2>
+            <h2>Bpk/Ibu {name ? name : ""}</h2>
           </div>
           <button
             className="button_cover"
