@@ -1,0 +1,43 @@
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.countdown-container h2 {
+  color: white;
+  font-family: "poppin_bold";
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.countdown {
+  font-family: "poppin_bold";
+  display: flex;
+  gap: 1rem;
+}
+
+.time {
+  display: inline-block;
+}
+
+.cont_clock {
+  border-radius: 1rem;
+  border: 2px solid white;
+  height: 5rem;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  color: white;
+}
+.countdown .cont_clock h5 {
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+.cont_clock h6 {
+  font-family: 0.5rem;
+  font-size: 0.5rem;
+}

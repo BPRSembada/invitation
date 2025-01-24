@@ -1,0 +1,178 @@
+.main_two {
+  background-image: url("/assets/background3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* Container utama */
+  min-height: 100vh; /* Pastikan full height */
+  overflow: hidden; /* Mencegah elemen melampaui container */
+}
+
+.header_two img {
+  position: absolute; /* Posisi absolut untuk header */
+  top: 0;
+  left: 0; /* Tempel di pojok kiri atas */
+  width: 15rem; /* Sesuaikan ukuran gambar */
+  height: auto;
+  z-index: 1; /* Layer background */
+}
+
+.footer_two .footer_left {
+  position: absolute; /* Tempel di kiri bawah */
+  bottom: 0;
+  left: 0;
+  width: 13rem; /* Sesuaikan ukuran */
+  height: auto;
+  z-index: 1; /* Layer background */
+}
+
+.footer_two .footer_right {
+  position: absolute; /* Tempel di kanan bawah */
+  bottom: 0;
+  right: 0;
+  width: 13rem; /* Sesuaikan ukuran */
+  height: auto;
+  z-index: 1; /* Layer background */
+}
+
+.content_two {
+  position: relative; /* Relatif terhadap parent */
+  z-index: 2; /* Layer di atas header dan footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120vh;
+  align-items: center;
+  text-align: center;
+}
+.hiburan_two img {
+  width: 35rem;
+}
+.head_ctwo {
+  margin-bottom: 1rem;
+}
+.head_ctwo h2 {
+  color: white;
+  font-family: "poppin_bold";
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.head_ctwo div h3 {
+  color: #fcb116;
+  font-family: "theLatsShuriken";
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.cont_rundown {
+  margin-inline: 1rem;
+}
+
+.cont_rundown .tabel_run {
+  border: none;
+  background-color: transparent;
+}
+
+.cont_rundown .tabel_run tr td {
+  text-align: start;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cont_rundown .td_2 {
+  padding-left: 1rem;
+}
+.cont_rundown .td_2 span {
+  padding-left: 1rem;
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .hiburan_two img {
+    width: 30rem;
+  }
+  .header_two img {
+    width: 13rem;
+  }
+  .footer_two .footer_left {
+    width: 13rem;
+  }
+
+  .footer_two .footer_right {
+    width: 13rem; /* Sesuaikan ukuran */
+  }
+  .content_two {
+    gap: 0rem;
+  }
+  .cont_rundown .tabel_run tr td {
+    text-align: start;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .head_ctwo h2 {
+    font-size: 2rem;
+  }
+  .head_ctwo div h3 {
+    font-size: 1.8rem;
+  }
+  .icon_calendar {
+    width: 2.7rem;
+  }
+  .cont_time_one h4 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .hiburan_two img {
+    width: 23rem;
+  }
+  .header_two img {
+    width: 10rem;
+  }
+  .footer_two .footer_left {
+    width: 10rem;
+  }
+
+  .footer_two .footer_right {
+    width: 10rem; /* Sesuaikan ukuran */
+  }
+  .head_ctwo h2 {
+    font-size: 1.8rem;
+  }
+  .head_ctwo div h3 {
+    font-size: 1.5rem;
+  }
+  .cont_rundown .tabel_run tr td {
+    text-align: start;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .cont_rundown .td_2 {
+    padding-left: 0rem;
+  }
+  .cont_rundown .td_2 span {
+    padding-left: 0rem;
+  }
+  .icon_calendar {
+    width: 2.7rem;
+  }
+  .cont_rundown {
+    margin-inline: 0.3rem;
+  }
+  .cont_time_one h4 {
+    font-size: 1.3rem;
+  }
+}

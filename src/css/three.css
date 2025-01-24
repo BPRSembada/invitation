@@ -1,0 +1,147 @@
+.contain_page2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form_section h2 {
+  color: white;
+  font-family: "poppin_bold";
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+.form-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 50vw;
+}
+.form-container form .item_form,
+.form-container form .item_drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form-container form input,
+.form-container form select {
+  width: 100%;
+}
+/* Label styling */
+.form-label,
+.dropdown-label {
+  font-size: 1.2rem;
+  font-family: "poppin";
+  color: white;
+}
+
+/* Input field styling */
+.form-input {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Glow effect on hover or input */
+.form-input:hover,
+.form-input:focus,
+.form-input.active {
+  border-color: gold;
+  box-shadow: 0 0 8px gold;
+}
+
+/* 
+=============================
+dropdown 
+================
+*/
+
+/* Dropdown field styling */
+.dropdown {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  appearance: none; /* For custom dropdown arrow */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  background-color: white;
+  color: #333;
+  border-radius: 1rem;
+}
+
+/* Add glow effect on hover or focus */
+.dropdown:hover,
+.dropdown:focus,
+.dropdown.active {
+  border-color: gold;
+  box-shadow: 0 0 8px gold;
+}
+
+/* Add padding to placeholder for better alignment */
+.dropdown option {
+  padding: 10px;
+}
+
+/* 
+=============================
+dropdown 
+================
+*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Button styles */
+.glow-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Glow effect on hover */
+.glow-button:hover {
+  border-color: gold;
+  box-shadow: 0 0 8px gold;
+}
+
+/* Glow effect on click */
+.glow-button:active {
+  border-color: gold;
+  box-shadow: 0 0 12px gold;
+  background-color: #fffbe6; /* Subtle background change on click */
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .form-container {
+    width: 100%;
+  }
+  .form_section h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .form-container {
+    width: 100%;
+  }
+  .form_section h3 {
+    font-size: 1.5rem;
+  }
+}

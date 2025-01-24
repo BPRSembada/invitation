@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "theLatsShuriken";
+  src: url(../assets/font/The-Last-Shuriken.ttf) format("truetype");
+}
+@font-face {
+  font-family: "latin";
+  src: url(../assets/font/Ephesis-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "poppin";
+  src: url(../assets/font/Poppins-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "poppin_bold";
+  src: url(../assets/font/Poppins-Bold.ttf) format("truetype");
+}
+.main_one {
+  background-image: url("/assets/backgroun2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* Container utama */
+  min-height: 120vh; /* Pastikan full height */
+  overflow: hidden; /* Mencegah elemen melampaui container */
+}
+
+.header_one img {
+  position: absolute; /* Posisi absolut untuk header */
+  top: 0;
+  left: 0; /* Tempel di pojok kiri atas */
+  width: 15rem; /* Sesuaikan ukuran gambar */
+  height: auto;
+  z-index: 1; /* Layer background */
+}
+
+.footer_one .footer_left {
+  position: absolute; /* Tempel di kiri bawah */
+  bottom: 0;
+  left: 0;
+  width: 13rem; /* Sesuaikan ukuran */
+  height: auto;
+  z-index: 1; /* Layer background */
+}
+
+.footer_one .footer_right {
+  position: absolute; /* Tempel di kanan bawah */
+  bottom: 0;
+  right: 0;
+  width: 13rem; /* Sesuaikan ukuran */
+  height: auto;
+  z-index: 1; /* Layer background */
+}
+
+.content_one {
+  position: relative; /* Relatif terhadap parent */
+  z-index: 2; /* Layer di atas header dan footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120vh;
+  align-items: center;
+  text-align: center;
+}
+.head_cone h2 {
+  color: white;
+  font-family: "poppin_bold";
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.head_cone div h3 {
+  color: #fcb116;
+  font-family: "theLatsShuriken";
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.cont_header_one {
+  margin-top: 1.5rem;
+}
+.icon_calendar {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cont_time_one {
+  color: white;
+}
+
+.cont_time_one .atas {
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.button_one {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: white; /* Blue background */
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease-in-out;
+  font-weight: 500;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.icon_btn {
+  font-size: 1.2rem;
+}
+
+.button_one:hover {
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8); /* White glow effect */
+}
+.button_2 {
+  margin-top: 3rem;
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .header_one img {
+    width: 13rem;
+  }
+  .footer_one .footer_left {
+    width: 13rem;
+  }
+
+  .footer_one .footer_right {
+    width: 13rem; /* Sesuaikan ukuran */
+  }
+  .head_cone h2 {
+    font-size: 2rem;
+  }
+  .head_cone div h3 {
+    font-size: 1.8rem;
+  }
+  .icon_calendar {
+    width: 2.7rem;
+  }
+  .cont_time_one h4 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .header_one img {
+    width: 10rem;
+  }
+  .footer_one .footer_left {
+    width: 10rem;
+  }
+
+  .footer_one .footer_right {
+    width: 10rem; /* Sesuaikan ukuran */
+  }
+  .head_cone h2 {
+    font-size: 1.8rem;
+  }
+  .head_cone div h3 {
+    font-size: 1.5rem;
+  }
+  .icon_calendar {
+    width: 2.7rem;
+  }
+  .cont_time_one h4 {
+    font-size: 1.3rem;
+  }
+}

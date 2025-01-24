@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "theLatsShuriken";
+  src: url(../assets/font/The-Last-Shuriken.ttf) format("truetype");
+}
+@font-face {
+  font-family: "latin";
+  src: url(../assets/font/Ephesis-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "poppin";
+  src: url(../assets/font/Poppins-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "poppin_bold";
+  src: url(../assets/font/Poppins-Bold.ttf) format("truetype");
+}
+.main_cover {
+  background-image: url("/assets/backgroun.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer_cover img {
+  height: 20rem;
+}
+.header_cover {
+  position: absolute;
+  top: 0; /* Menempel di atas */
+  left: 0; /* Menempel di kanan */
+}
+
+.header_cover img {
+  max-height: 15rem; /* Sesuaikan ukuran gambar */
+  height: auto;
+}
+
+.footer_cover {
+  position: absolute;
+  bottom: 0; /* Menempel di bawah */
+  right: 0; /* Menempel di kiri */
+}
+
+.footer_cover img {
+  max-width: 150px; /* Sesuaikan ukuran gambar */
+  height: auto;
+}
+
+.conten_cover {
+  position: relative;
+  z-index: 1; /* Lapisan tertinggi */
+  text-align: center; /* Pusatkan teks */
+  /* padding: 20px;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cont_header_cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont_header_cover .logo {
+  width: 12rem;
+}
+.cont_header_cover .main_barongsasi {
+  margin-top: 1rem;
+  width: 15rem;
+}
+
+.conten_cover h2,
+.conten_cover p {
+  margin: 0; /* Hilangkan margin default */
+}
+
+.greeting_cover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.greeting_cover h2 {
+  color: white;
+  font-family: "latin";
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 200;
+}
+.greeting_cover div h3 {
+  color: #fcb116;
+  font-family: "theLatsShuriken";
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.to {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.8);
+  border-radius: 1rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  margin-top: 1rem;
+  margin-inline: 10rem;
+}
+.to h2 {
+  font-size: 1rem;
+}
+.button_cover {
+  background-color: red; /* Warna dasar tombol */
+  color: white; /* Warna teks */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  position: relative; /* Dibutuhkan untuk efek */
+  box-shadow: 0 0 10px rgba(240, 11, 11, 0.5); /* Cahaya awal */
+  transition: all 0.3s ease-in-out;
+  animation: glow 1.5s infinite alternate;
+  margin-top: 1rem;
+}
+
+.button_cover:hover {
+  transform: scale(1.1); /* Membesarkan sedikit saat di-hover */
+  box-shadow: 0 0 20px rgba(255, 75, 43, 0.8); /* Tambahkan intensitas glow */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 75, 43, 0.5), 0 0 20px rgba(255, 75, 43, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 75, 43, 0.7), 0 0 30px rgba(255, 75, 43, 0.6);
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .header_cover img {
+    height: 14rem;
+  }
+  .footer_cover img {
+    height: 18rem;
+  }
+  .conten_cover {
+    padding-inline: 1rem;
+  }
+  .cont_header_cover .logo {
+    width: 12rem;
+  }
+  .cont_header_cover .main_barongsasi {
+    margin-top: 1rem;
+    width: 16rem;
+  }
+  .greeting_cover h2 {
+    font-size: 2rem;
+  }
+  .greeting_cover div h3 {
+    font-size: 1.8rem;
+  }
+  .to {
+    margin-inline: 3rem;
+    margin-bottom: 1rem;
+  }
+  .footer_img img {
+    height: 0.8rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .header_cover img {
+    height: 10rem;
+  }
+  .footer_cover img {
+    height: 18rem;
+  }
+  .conten_cover {
+    padding-inline: 1rem;
+  }
+  .cont_header_cover .logo {
+    width: 12rem;
+  }
+  .cont_header_cover .main_barongsasi {
+    margin-top: 1rem;
+    width: 13rem;
+  }
+  .greeting_cover h2 {
+    font-size: 1.8rem;
+  }
+  .greeting_cover div h3 {
+    font-size: 1.3rem;
+  }
+  .to {
+    margin-inline: 1rem;
+    margin-bottom: 1rem;
+    padding-inline: 1;
+  }
+  .footer_img img {
+    height: 0.8rem;
+  }
+}

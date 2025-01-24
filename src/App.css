@@ -1,0 +1,14 @@
+:root {
+  --merah: #b50b0b;
+}
+.main_app {
+  overflow: hidden;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
